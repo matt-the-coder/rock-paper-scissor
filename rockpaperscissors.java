@@ -28,8 +28,8 @@ public class rockpaperscissors {
       System.out.println("Enter your choice (0=rock, 1=paper, 2=scissors)");
       //User input
       userChoice = input.nextInt();
-               //if user chooses above 2
-              while (userChoice > 2) {
+               //if user chooses above 2 or below 0
+              while (userChoice > 2 || userChoice < 0) {
             System.out.println("give number between 0 and 2");
             userChoice = input.nextInt();
         }
@@ -75,9 +75,9 @@ public class rockpaperscissors {
       while (userChoice == computerChoice) {
             System.out.println("draw try again");
             
-            // if user chooses above 2
+            //if user chooses above 2 or below 0
             userChoice = input.nextInt();
-                          while (userChoice > 2) {
+              while (userChoice > 2 || userChoice < 0) {
                             System.out.println("give number between 0 and 2");
                             userChoice = input.nextInt();
                             }
